@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/23/2016 10:33:29 AM
+// Create Date: 11/27/2016 01:17:20 PM
 // Design Name: 
 // Module Name: Matrix
 // Project Name: 
@@ -77,5 +77,17 @@ module Matrix(input logic clk, input logic [7:0][23:0] inp,
     7: rowsOut = 128;
     default: rowsOut = 0;
     endcase
- 
- endmodule
+    
+    
+   /* always_ff@(negedge shcp)
+    begin 
+    ds <= dstotal[i];
+    if(i==23)
+    i<=0;
+    else i++; 
+    end */
+    
+    
+    
+    
+endmodule

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/17/2016 11:58:31 AM
+// Create Date: 12/17/2016 01:06:59 PM
 // Design Name: 
-// Module Name: ClockDividerTwoPlayerXOX
+// Module Name: JoinerXOX
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ClockDividerTwoPlayerXOX( input clk, input start, output logic newClock
-
+/*module JoinerXOX(
+    input logic [1:0] rows, columns, input logic start,
+                    input logic clk, output logic shcp, stcp, mr, oe, ds,[7:0] rowsOut
     );
-    
-    always@(posedge clk)
-    if (start)
-        newClock = 1'b1;
-    else
-        newClock = 1'b0;
-    
-endmodule
+    logic [7:0][23:0] board;
+    TwoPlayerJoiner  gameXOX(rows, columns,start, clk,board );
+    Gametop lightTheLedsUp(shcp, stcp, mr, oe, ds,rowsOut, clk, board);
+endmodule*/
